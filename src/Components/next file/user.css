@@ -1,0 +1,8 @@
+.user-div{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;    
+    width: 250px;
+    /* margin: 5px; */
+    
+}

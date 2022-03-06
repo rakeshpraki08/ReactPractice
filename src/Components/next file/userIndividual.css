@@ -1,0 +1,16 @@
+.pic-div{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    border: 5px solid gold;
+    
+}
+.pic-img{
+    margin: 15px;
+}
+
+.name{
+    margin-top: 0px;
+    text-transform: capitalize;
+}

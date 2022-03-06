@@ -9,7 +9,7 @@ class App extends Component{
 
   constructor(){
     super();
-    this.state = {isLoggedin:false}
+    this.state = {isLoggedin:true}
   }
 
   verifyFunction(userName, password){
@@ -25,7 +25,7 @@ class App extends Component{
 
   render(){
     return(
-      <div>
+      <div className='app-div'>
         {
         this.state.isLoggedin ?
         <Main/>

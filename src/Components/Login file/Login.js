@@ -12,7 +12,7 @@ class Login extends Component{
     }
 
     handleUserName(event){
-        console.log(event.target.value)
+        // console.log("inside Function", this.state.userNameState)
         this.setState({userNameState:event.target.value});
     }
 
@@ -22,14 +22,14 @@ class Login extends Component{
     
 
     render(){
-        
+        // console.log("after render",this.state.userNameState)
         return(
-            <div>
-            <h1>Login Page</h1>
-                    <form onSubmit={()=>this.props.verify(this.state.userNameState, this.state.passWordState)}>
+            <div className="login-div">
+            <h1 className="login-h1">Login Page</h1>
+                    <form>
                         <input className="UserName" type = "text" placeholder="UserName" value = {this.state.userNameState} onChange={(e)=>this.handleUserName(e)} />
                         <input className="Password" type = "password" placeholder="Password" value = {this.state.passWordState} onChange={(e)=>this.handlepassword(e)} />
-                        <input className="Submit"  type="submit"/>
+                        <input onClick={()=>this.props.verify(this.state.userNameState, this.state.passWordState)} className="Submit"  type="submit"/>
                     </form>
             </div>        
         )
