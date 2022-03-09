@@ -25,7 +25,7 @@ class User extends Component{
 
     render(){
         // console.log(this.props.userDataProps);
-        console.log(this.state.isclicked);
+        // console.log(this.state.isclicked);
         return this.props.userDataProps && this.props.userDataProps.map((user)=>{
             
             return(
@@ -33,7 +33,7 @@ class User extends Component{
                     <UserIndividual singleUser = {user} BtnClicked = {this.show.bind(this)}/>
                     
                     {
-                        (this.state.isclicked.includes(user.id)) && <CardUser openState = {this.state.open} closeState = {()=>this.setState({open:false})}/>
+                        (this.state.isclicked.includes(user.id)) && <CardUser openState = {this.state.open} closeState = {()=>this.setState({open:false})} userDetails = {user}/>
                     } 
                     
                 </div>

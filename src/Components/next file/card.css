@@ -1,4 +1,57 @@
+.modal{
+    height:400px;
+    width:700px;
+    border:12px solid goldenrod;
+    border-radius: 20px;
+    position: fixed;
+    background-color:  rgba(248, 248, 255, 10) ;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    /* text-align: center; */
+    
+}
+
+.para{
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: space-around;
+}
+
+h3{
+    text-transform: capitalize;
+    color: gray;
+}
+
+.imgModel{
+    border: 13px solid gainsboro;
+}
+
+.btn{
+    width: 100px;
+    height: 25px;
+    border-radius: 20px;
+    border: 2px solid gainsboro;
+
+}
+
+.h1css{
+    text-align: center;   
+    color: red; 
+}
+
 .BtnModalClass{
-    justify-content: flex-end;
-  display: flex;
+    /* left:50%; */
+    /* border: 2px solid red; */
+    position: fixed;
+    /* text-align: right; */
+    width: 200px;
+    /* align-items: flex-end; */
+    /* margin-top: 50px; */
+    right: 0;
+    bottom:20px;
+    
+    
+
+
 }

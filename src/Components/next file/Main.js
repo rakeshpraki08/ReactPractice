@@ -18,7 +18,7 @@ class Main extends Component{
     oninputchange(event){
 
         const inputvalue = event.target.value.toLowerCase();
-        console.log(inputvalue);
+        // console.log(inputvalue);
 
         this.setState({textvalue:inputvalue})
 

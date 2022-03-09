@@ -16,30 +16,49 @@ class CardUser extends Component{
         this.state={modalState:false}
     }
 
-    // stateChangeModal(a){
-    //     const b = a;
-    //     (this.setState({modalState:b}));
-    // }
-
     render(){
-        // this.setState({modalState:this.props.openState})
-        console.log(this.props.openState);
+       
+        console.log(this.props.userDetails);
         return(
-            <div>
+            <div >
 
             
             <Modal
-                // isOpen = {()=>this.stateChangeModal(this.props.openState)} 
-                isOpen = {this.props.openState}
-                
-                // shouldCloseOnOverlayClick = {false}
-                // onRequestClose = {()=>this.stateChange(false)}
+                isOpen = {this.props.openState}                
+                onRequestClose = {this.props.closeState}
+                className='modal'
                 
             >
-                <ModalTitle><h1>Modal Title</h1></ModalTitle>
-                <p>Modal body</p>   
+                <ModalTitle ><h1 className='h1css'>User Info</h1></ModalTitle>
+                
+                <div className='para'>
+                    <div>
+                    <img  className ='imgModel' border='2px solid' width='200px' src={this.props.userDetails.picture}/>
+                    </div>
+                    <div className='bodydetails'>
+                
+                        <h3>
+                            Mr/Ms : {this.props.userDetails.title}
+                        </h3>
+                        <h3>
+                            FirstName : {this.props.userDetails.firstName}
+                        </h3> 
+                        <h3>
+                            LastName : {this.props.userDetails.lastName}
+                        <h3>
+                            UserId : {this.props.userDetails.id}
+                        </h3>
+                        </h3>
+
+                       
+                    
+
+                    </div>                    
+                    
+                </div>
+
                 <div className='BtnModalClass'>
-                    <button onClick={this.props.closeState}>Close</button>
+                    <button className='btn' onClick={this.props.closeState}>Close</button>
                 </div>
                 
             </Modal>    
