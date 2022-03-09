@@ -17,12 +17,13 @@ class Main extends Component{
 
     oninputchange(event){
 
-        const inputvalue = event.target.value.tolowercase();
+        const inputvalue = event.target.value.toLowerCase();
+        console.log(inputvalue);
 
         this.setState({textvalue:inputvalue})
 
         const filteredData = this.state.alluser.filter((i)=>{
-            return i.firstName.tolowercase().startsWith(inputvalue);
+            return i.firstName.toLowerCase().startsWith(inputvalue);
         })
 
         this.setState({userdata:filteredData});
@@ -47,7 +48,7 @@ class Main extends Component{
             <div className="main-div">
                 
                 <h1 className="main-h1">Hi</h1>
-                <input onchange={(e)=>this.oninputchange(e)} placeholder="Search User Name" type="text" value={this.state.textvalue}/>
+                <input onChange={(e)=>this.oninputchange(e)} placeholder="Search User Name" type="text" value={this.state.textvalue}/>
                 {
                     this.state.loading?
                      <SpinnerLoading/>

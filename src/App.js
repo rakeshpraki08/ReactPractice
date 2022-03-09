@@ -1,9 +1,12 @@
 import React from 'react';
 import { Component } from 'react';
+// import { ModalTitle } from 'react-bootstrap';
 import './App.css';
 import Login from './Components/Login file/Login';
 import Main from './Components/next file/Main';
+import Modal from 'react-modal/lib/components/Modal';
 
+Modal.setAppElement('#root');
 
 class App extends Component{
 

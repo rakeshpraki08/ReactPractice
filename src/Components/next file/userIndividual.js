@@ -20,7 +20,7 @@ class UserIndividual extends Component{
         
         return(
             <div className="pic-div">
-                <button className="individual_btn" onClick={(e)=>this.props.BtnClicked()} >
+                <button className="individual_btn" onClick={(e)=>this.props.BtnClicked(this.props.singleUser.id)} >
                 <img width="200" className="pic-img" src={picture} alt="img"/>      
                 <h1 className="name">{title} {fullName}</h1> 
                 </button>    
