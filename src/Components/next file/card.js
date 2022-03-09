@@ -33,7 +33,7 @@ class CardUser extends Component{
                 
                 <div className='para'>
                     <div>
-                    <img  className ='imgModel' border='2px solid' width='200px' src={this.props.userDetails.picture}/>
+                    <img  alt = {this.props.userDetails.id} className ='imgModel' border='2px solid' width='200px' src={this.props.userDetails.picture}/>
                     </div>
                     <div className='bodydetails'>
                 
