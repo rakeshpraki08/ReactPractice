@@ -45,14 +45,11 @@ class CardUser extends Component{
                         </h3> 
                         <h3>
                             LastName : {this.props.userDetails.lastName}
+                        </h3>
                         <h3>
                             UserId : {this.props.userDetails.id}
-                        </h3>
-                        </h3>
-
-                       
+                        </h3>                   
                     
-
                     </div>                    
                     
                 </div>
